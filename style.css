@@ -1,34 +1,113 @@
-*::before, *::after{
-    box-sizing:border-box ;
-    font-family: Franklin Gothic Medium;
-    font-weight: normal;
-}
 body{
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to right, #00aaff,#00ff6c);
+  margin: 0;
+  padding: 0;
+  line-height: 0.5;
+  background: #7003f0;
 
 }
+.calci{
 
-.calculator{
-    display:grid ;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: min-content(120px, auto) repeat(s, 100px);
+  width: 400px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  transition: 0.25px;
+  text-align: center;
+  
+  
 }
-.calculator > button{
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px  solid white;
-    outline: none;
-    background: rgba(255, 255, 255. 75);
+#display{
+  border: none;
+  background: whitesmoke;
+  border-radius: 30px;
+  width: 200px;
+  height: 60px;
+  font-size: 20;
+  font-family: sans-serif;
+  font-weight: 300;
+  height: 60;
+  margin: auto;
+  border: 2px solid white;
+  color: black;
+  display: flex;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+  
+  
+  
+}
+.previous-operand{
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+.current-operand{
+  color: white;
+  font-size: 2.5rem;
+}
+.btnDesign{
+  width: 45px;
+  height: 35px;
+  padding-top: -1;
+  border: none;
+  font-family: sans-serif;
+  font-size: 20;
+  font-weight: 300;
+  border-radius: 20px;
+  margin: 1, 5;
+  text-align: center;
+  transition: 0.5s;
+  outline: none;
+  
+
+
+
 
 }
-.calculator> button:hover{
-    background-color: rgba(255, 255, 255. 9);
+.btnDesign:hover{
+  background: lightblue;
+}
+.operatorDesign{
+  width: 45px;
+  height: 35px;
+  padding-top: -1;
+  padding-right: 2px;
+  border: none;
+  font-family: sans-serif;
+  font-size: 20;
+  font-weight: 300;
+  border-radius: 30px;
+  margin: 1.5;
+  transition: 0.25px;
+  cursor: pointer;
+  background:salmon ;
+  transition: 0.5s;
+
+
 
 }
-
-
+.operatorDesign:hover{
+  background: whitesmoke;
+}
+#zero{
+  width: 90px;
+  height: 35px;
+  padding-top: -1;
+  border: none;
+  font-family: sans-serif;
+  font-size: 20;
+  font-weight: 300;
+  border-radius: 30px;
+  margin: 1.5;
+  transition: 0.25px;
+  cursor: pointer;
+  background: burlywood;
+  transition: 0.5s;
+  
+}
+#zero:hover{
+  background: whitesmoke;
+}

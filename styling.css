@@ -1,0 +1,24 @@
+*, *::before, *::after {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #00aaff,#00ff6c);
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-item{
+    background-color: 255, 255, 255, 0.8; 
+    padding: 20px;
+    text-align: center;
+    
+  }
